@@ -43,12 +43,13 @@
 
 ```mermaid
 flowchart TD
-    A[User Input: Personality Test] --> B[NLP Analysis (SpaCy/TextBlob)]
-    B --> C[Personality Profiling (MBTI + Big Five)]
-    C --> D{Database Storage}
-    D --> E[PostgreSQL: Structured Data]
-    D --> F[MongoDB: Unstructured Data]
+    A[User Input: Personality Test] --> B[NLP Analysis - SpaCy & TextBlob]
+    B --> C[Personality Profiling - MBTI and Big Five]
+    C --> D[Database Storage]
+    D --> E[PostgreSQL - Structured Data]
+    D --> F[MongoDB - Unstructured Data]
     C --> G[Recommendation Engine]
-    G --> H[Content-Based + Collaborative Filtering]
-    H --> I[Frontend: React.js UI]
-    I --> J[Career Suggestions + Analytics]
+    G --> H[Content-Based and Collaborative Filtering]
+    H --> I[Frontend - React.js UI]
+    I --> J[Career Suggestions and Analytics]
+
