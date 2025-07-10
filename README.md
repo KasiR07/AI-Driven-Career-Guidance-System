@@ -1,4 +1,3 @@
-# Personality-Based-Career-Guidance-System
 # 🎯 Career Compass: Chatbot-Assisted Personality-Based Career Guidance System
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue)
