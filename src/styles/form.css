@@ -1,0 +1,218 @@
+/* Global resets and base styles */
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+/* Fullscreen video background */
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Page Container */
+.page-container {
+  overflow-y: auto;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Content Container (centered) */
+.content-container {
+  width: 90%;
+  max-width: 800px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Header Styling */
+.page-header {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.page-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.page-header p {
+  font-size: 18px;
+  color: #ddd;
+}
+
+/* Intro & How It Works Section */
+.intro-section p {
+  font-size: 16px;
+  color: #eee;
+  margin-bottom: 20px;
+}
+.how-it-works h2 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.how-it-works ul {
+  list-style: none;
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+/* Custom File Upload Button */
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background: #00d2ff;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #000;
+  transition: background 0.3s ease;
+}
+.custom-file-upload:hover {
+  background: #00b6e5;
+}
+
+/* Quiz Container */
+.quiz-container {
+  background: #1c1f26;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+}
+.quiz-header h2 {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* Progress Bar */
+.progress-bar {
+  background: #2e2e2e;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 12px;
+  margin-bottom: 15px;
+}
+.progress {
+  height: 100%;
+  background: #00d2ff;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Question Card */
+.question-card {
+  background: #2e2e2e;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.question {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* Answer Buttons */
+.answer-btn {
+  padding: 10px;
+  margin-bottom: 8px;
+  border: none;
+  border-radius: 5px;
+  background: #3d3f4a;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.answer-btn:hover {
+  background: #5c5eff;
+}
+.answer-btn.selected {
+  background: #00d2ff;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Navigation Button */
+.next-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #00d2ff;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-bottom: 10px;
+}
+.next-btn:hover {
+  background: #00b6e5;
+}
+
+/* Result Box */
+.result-box {
+  background: #2e2e2e;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  margin-top: 20px;
+}
+.loading-text {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.answers {
+  display: flex;
+  flex-direction: row;  /* Change from column to row */
+  gap: 15px;            /* Adjust the spacing as needed */
+  flex-wrap: nowrap;    /* Prevent wrapping to the next line */
+  justify-content: center; /* Center the buttons horizontally */
+}
+
+/* Responsive adjustments for smaller screen heights */
+@media (max-height: 900px) {
+  .content-container {
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    font-size: 13px;
+  }
+}
