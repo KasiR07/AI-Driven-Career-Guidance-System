@@ -5,7 +5,7 @@ HEAD
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-Research--Project-orange)
 
-> An AI-powered system that integrates personality assessments, NLP, and labor market analytics to deliver personalized, dynamic career recommendations.
+> An AI-powered system that integrates personality assessments, NLP, and labor market analytics to deliver personalized, dynamic career recommendations
 
 ---
 
