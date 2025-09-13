@@ -11,7 +11,7 @@ HEAD
 
 ## 📌 Overview
 
-**Career Compass** is a chatbot-assisted, AI-driven recommendation platform that aligns users’ psychological profiles with real-time career options. It integrates the **MBTI** and **Big Five** personality models with NLP and machine learning to deliver tailored career guidance to students, job seekers, and professionals.
+**Career Compass** is a chatbot-assisted, AI-driven recommendation platform that aligns users’ psychological profiles with real-time career options. It integrates the **MBTI** and **Big Five** personality models with NLP and machine learning to deliver tailored career guidance to students, job seekers, and professionals
 
 ---
 
